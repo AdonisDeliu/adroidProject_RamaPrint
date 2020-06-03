@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RamaPrint</string>
+    <string name="web">WEB</string>
+    <string name="design">DESIGN</string>
+    <string name="print">PRINT</string>
+    <string name="_3d">3D</string>
+</resources>

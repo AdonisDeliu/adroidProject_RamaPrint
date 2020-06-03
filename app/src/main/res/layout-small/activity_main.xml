@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+
+    <Button
+        android:id="@+id/buttonWeb"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/web"
+        android:text="@string/web"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="10sp"></Button>
+
+    <Button
+        android:id="@+id/buttonDesign"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/design"
+        android:text="@string/design"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="10sp"></Button>
+
+    <Button
+        android:id="@+id/buttonPrint"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/print"
+        android:text="@string/print"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="10sp"></Button>
+
+    <Button
+        android:id="@+id/buttonReklam"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/reklame"
+        android:text="@string/_3d"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="10sp"></Button>
+
+
+
+
+
+</RelativeLayout>
