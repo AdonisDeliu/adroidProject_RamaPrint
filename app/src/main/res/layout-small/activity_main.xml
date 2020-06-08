@@ -8,7 +8,6 @@
     tools:context=".MainActivity">
 
 
-
     <Button
         android:id="@+id/buttonWeb"
         android:layout_width="110dp"
@@ -20,7 +19,7 @@
         android:text="@string/web"
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:textSize="10sp"></Button>
+        android:textSize="10sp" />
 
     <Button
         android:id="@+id/buttonDesign"
@@ -33,7 +32,7 @@
         android:text="@string/design"
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:textSize="10sp"></Button>
+        android:textSize="10sp" />
 
     <Button
         android:id="@+id/buttonPrint"
@@ -46,7 +45,7 @@
         android:text="@string/print"
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:textSize="10sp"></Button>
+        android:textSize="10sp" />
 
     <Button
         android:id="@+id/buttonReklam"
@@ -59,7 +58,7 @@
         android:text="@string/_3d"
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:textSize="10sp"></Button>
+        android:textSize="10sp" />
 
 
 

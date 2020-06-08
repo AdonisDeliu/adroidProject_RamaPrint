@@ -12,12 +12,10 @@ public class MainActivity extends AppCompatActivity {
 
     private Button buttonWeb;
     private Button buttonDesign;
-    private Button buttonPrint;
     private Button buttonReklam;
-    private Button buttonLocationn;
-    private Button buttonContact;
-
-
+    private Button buttonPrint;
+//    private Button buttonLocationn;
+//    private Button buttonContactt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +24,11 @@ public class MainActivity extends AppCompatActivity {
 
         buttonWeb = (Button) findViewById(R.id.buttonWeb);
         buttonDesign = (Button) findViewById(R.id.buttonDesign);
-        buttonPrint = (Button) findViewById(R.id.buttonPrint);
         buttonReklam = (Button) findViewById(R.id.buttonReklam);
-        buttonLocationn = (Button) findViewById(R.id.buttonLocationn);
-        buttonContact = (Button) findViewById(R.id.buttonContact);
+        buttonPrint = (Button) findViewById(R.id.buttonPrint);
+//        buttonLocationn = (Button) findViewById(R.id.buttonLocationn);
+//        buttonContactt = (Button) findViewById(R.id.buttonContactt);
+
 
 
 
@@ -41,10 +40,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
         buttonDesign.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    openDesign();
-                }
+            @Override
+            public void onClick(View v) {
+                openDesign();
+            }
+        });
+
+        buttonReklam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openReklam();
+            }
         });
 
         buttonPrint.setOnClickListener(new View.OnClickListener() {
@@ -54,50 +60,46 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonReklam.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { openReklam();
-            }
-        });
-        buttonLocationn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openLocationn();
-            }
-        });
-        buttonContact.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openContact();
-            }
-        });
+
+//        buttonLocationn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openLocationn();
+//            }
+//        });
+//
+//        buttonContactt.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openContactt();
+//            }
+//        });
+
 
     }
 
-        public void openWeb(){
+    public void openWeb(){
             Intent intent = new Intent(this,Web.class);
             startActivity(intent);
     }
-        public void openDesign(){
-            Intent intent = new Intent(this,Design.class);
-            startActivity(intent);
-    }
-        public void openPrint(){
-            Intent intent = new Intent(this,Print.class);
-            startActivity(intent);
-    }
-        public void openReklam(){
-            Intent intent = new Intent(this,Reklam.class);
-            startActivity(intent);
-    }
-    public void openLocationn(){
-        Intent intent = new Intent(this,Locationn.class);
+    public void openDesign(){
+        Intent intent = new Intent(this,Design.class);
         startActivity(intent);
     }
-    public void openContact(){
-        Intent intent = new Intent(this,Contact.class);
+    public void openReklam(){
+        Intent intent = new Intent(this,Reklam.class);
         startActivity(intent);
     }
-
-
+    public void openPrint(){
+        Intent intent = new Intent(this,Print.class);
+        startActivity(intent);
+    }
+//    public void openLocationn(){
+//        Intent intent = new Intent(this,Locationn.class);
+//        startActivity(intent);
+//    }
+//    public void openContactt(){
+//        Intent intent = new Intent(this,Contactt.class);
+//        startActivity(intent);
+//    }
 }

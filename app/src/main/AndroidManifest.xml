@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Locationn"></activity>
+        <activity android:name=".Reklam"></activity>
         <activity android:name=".Print" />
+        <activity android:name=".Elementi" />
         <activity android:name=".Design" />
-        <activity android:name=".Reklam" />
         <activity android:name=".Web" />
         <activity android:name=".MainActivity">
             <intent-filter>
