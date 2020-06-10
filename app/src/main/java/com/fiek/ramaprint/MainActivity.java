@@ -14,8 +14,6 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonDesign;
     private Button buttonReklam;
     private Button buttonPrint;
-//    private Button buttonLocationn;
-//    private Button buttonContactt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +24,6 @@ public class MainActivity extends AppCompatActivity {
         buttonDesign = (Button) findViewById(R.id.buttonDesign);
         buttonReklam = (Button) findViewById(R.id.buttonReklam);
         buttonPrint = (Button) findViewById(R.id.buttonPrint);
-//        buttonLocationn = (Button) findViewById(R.id.buttonLocationn);
-//        buttonContactt = (Button) findViewById(R.id.buttonContactt);
-
-
 
 
         buttonWeb.setOnClickListener(new View.OnClickListener() {
@@ -61,20 +55,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-//        buttonLocationn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                openLocationn();
-//            }
-//        });
-//
-//        buttonContactt.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                openContactt();
-//            }
-//        });
-
 
     }
 
@@ -94,12 +74,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,Print.class);
         startActivity(intent);
     }
-//    public void openLocationn(){
-//        Intent intent = new Intent(this,Locationn.class);
-//        startActivity(intent);
-//    }
-//    public void openContactt(){
-//        Intent intent = new Intent(this,Contactt.class);
-//        startActivity(intent);
-//    }
+
 }
