@@ -12,3 +12,4 @@ public class Web extends AppCompatActivity {
         setContentView(R.layout.activity_web);
     }
 }
+

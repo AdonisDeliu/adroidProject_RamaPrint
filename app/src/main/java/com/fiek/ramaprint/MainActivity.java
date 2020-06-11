@@ -54,8 +54,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
 
     public void openWeb(){
@@ -74,5 +72,4 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,Print.class);
         startActivity(intent);
     }
-
 }
