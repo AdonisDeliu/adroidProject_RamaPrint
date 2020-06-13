@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "26845304549",
+    "firebase_url": "https://ramaprintapp.firebaseio.com",
+    "project_id": "ramaprintapp",
+    "storage_bucket": "ramaprintapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26845304549:android:24871ebf4ed85b97f3660c",
+        "android_client_info": {
+          "package_name": "com.fiek.ramaprint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26845304549-nk48dhc2n6bsnthh4f2jvko0pfqctjm9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaABUeFUsgktcF4rsgWy3jAGMIMFBEqds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26845304549-nk48dhc2n6bsnthh4f2jvko0pfqctjm9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
