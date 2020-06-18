@@ -1,62 +1,73 @@
 package com.fiek.ramaprint;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.location.Location;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button buttonWeb;
-    private Button buttonDesign;
-    private Button buttonReklam;
-    private Button buttonPrint;
+    private EditText mEditTextTo;
+    private EditText mEditTextSubject;
+    private EditText mEditTextMessage;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonWeb = (Button) findViewById(R.id.buttonWeb);
-        buttonDesign = (Button) findViewById(R.id.buttonDesign);
-        buttonReklam = (Button) findViewById(R.id.buttonReklam);
-        buttonPrint = (Button) findViewById(R.id.buttonPrint);
+        mEditTextTo = findViewById(R.id.edit_text_to);
+        mEditTextSubject = findViewById(R.id.edit_text_subject);
+        mEditTextMessage = findViewById(R.id.edit_text_message);
+//        Button buttonSend = findViewById(R.id.button_send);
+        Button buttonWeb = findViewById(R.id.buttonWeb);
+        Button buttonDesign = findViewById(R.id.buttonDesign);
+        Button buttonReklam = findViewById(R.id.buttonReklam);
+        Button buttonPrint = findViewById(R.id.buttonPrint);
+        Button buttonKontakt = findViewById(R.id.buttonKontakt);
+        Button buttonLokacion = findViewById(R.id.buttonLokacion);
 
 
-        buttonWeb.setOnClickListener(new View.OnClickListener() {
-            @Override
-                public void onClick(View v) {
-                openWeb();
-            }
+
+
+        buttonWeb.setOnClickListener(v -> openWeb());
+
+        buttonDesign.setOnClickListener(v -> openDesign());
+
+        buttonReklam.setOnClickListener(v -> openReklam());
+
+        buttonPrint.setOnClickListener(v -> {
+            Toast.makeText(getApplicationContext(), "Kliko mbi foto per me shume info!", Toast.LENGTH_LONG).show();
+            openPrint();
         });
 
-        buttonDesign.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openDesign();
-            }
-        });
+        buttonKontakt.setOnClickListener(v -> openKontakt());
 
-        buttonReklam.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openReklam();
-            }
-        });
+        buttonLokacion.setOnClickListener(v -> openLokacion());
 
-        buttonPrint.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Kliko mbi foto per me shume info!", Toast.LENGTH_LONG).show();
-                openPrint();
-            }
-        });
-
+//        buttonSend.setOnClickListener(v -> sendMail());
     }
+
+//    private void sendMail() {
+//        String recipientList = mEditTextTo.getText().toString();
+//        String [] recipients = recipientList.split( ",");
+//
+//        String subject = mEditTextSubject.getText().toString();
+//        String message = mEditTextMessage.getText().toString();
+//
+//        Intent intent = new Intent (Intent.ACTION_SEND);
+//        intent.putExtra(Intent.EXTRA_EMAIL, recipients);
+//        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+//        intent.putExtra(Intent.EXTRA_TEXT, message);
+//
+//        intent.setType ("message/rfc822");
+//        startActivity(Intent.createChooser(intent, "Zgjidh nje email client"));
+//    }
 
     public void openWeb(){
             Intent intent = new Intent(this,Web.class);
@@ -72,6 +83,14 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openPrint(){
         Intent intent = new Intent(this,Print.class);
+        startActivity(intent);
+    }
+    public void openKontakt(){
+        Intent intent = new Intent(this,Kontakt.class);
+        startActivity(intent);
+    }
+    public void openLokacion(){
+        Intent intent = new Intent(this,Lokacion.class);
         startActivity(intent);
     }
 }
