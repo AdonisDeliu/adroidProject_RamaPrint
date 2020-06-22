@@ -1,14 +1,17 @@
 package com.fiek.ramaprint;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class Kontakt extends AppCompatActivity {
 
@@ -19,6 +22,12 @@ public class Kontakt extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kontakt);
+
+        LinearLayout linearLayout = findViewById(R.id.layout);
+        AnimationDrawable animationDrawable = (AnimationDrawable) linearLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(2000);
+        animationDrawable.setExitFadeDuration(4000);
+        animationDrawable.start();
 
         mRecipientEt = findViewById(R.id.recipientEt);
         mSubjectEt = findViewById(R.id.subjectEt);

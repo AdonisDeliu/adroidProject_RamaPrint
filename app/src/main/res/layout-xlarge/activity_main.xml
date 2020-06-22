@@ -18,7 +18,7 @@
         android:text="@string/web"
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:textSize="25sp" />
+        android:textSize="25sp"/>
 
     <Button
         android:id="@+id/buttonDesign"

@@ -8,4 +8,10 @@
     <string name="reklame_kamioni">Reklame Kamioni</string>
     <string name="nature">Nature</string>
     <string name="contactt" />
+    <string name="to">To:</string>
+    <string name="email">Email</string>
+    <string name="subject">Subject:</string>
+    <string name="message">Message:</string>
+    <string name="enter_message_here">Enter message heree…</string>
+    <string name="dergo">Dergo</string>
 </resources>
