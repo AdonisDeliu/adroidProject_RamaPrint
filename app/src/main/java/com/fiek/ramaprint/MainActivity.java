@@ -2,9 +2,7 @@ package com.fiek.ramaprint;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonReklam = findViewById(R.id.buttonReklam);
         Button buttonPrint = findViewById(R.id.buttonPrint);
         Button buttonKontakt = findViewById(R.id.buttonKontakt);
-        Button buttonLokacion = findViewById(R.id.buttonLokacion);
+        Button buttonLokacioni = findViewById(R.id.buttonLokacioni);
 
 
 
@@ -40,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonKontakt.setOnClickListener(v -> openKontakt());
 
-        buttonLokacion.setOnClickListener(v -> openLokacion());
+        buttonLokacioni.setOnClickListener(v -> openLokacioni());
 
 
         
@@ -67,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,Kontakt.class);
         startActivity(intent);
     }
-    public void openLokacion(){
-        Intent intent = new Intent(this,Lokacion.class);
+    public void openLokacioni(){
+        Intent intent = new Intent(this,lokacioni.class);
         startActivity(intent);
     }
 

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,7 +18,8 @@
         android:text="@string/web"
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:textSize="10sp" />
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
 
     <Button
         android:id="@+id/buttonDesign"
@@ -32,7 +32,8 @@
         android:text="@string/design"
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:textSize="10sp" />
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
 
     <Button
         android:id="@+id/buttonPrint"
@@ -45,7 +46,8 @@
         android:text="@string/print"
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:textSize="10sp" />
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
 
     <Button
         android:id="@+id/buttonReklam"
@@ -58,10 +60,28 @@
         android:text="@string/_3d"
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:textSize="10sp" />
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
 
 
+    <Button
+        android:id="@+id/buttonKontakt"
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/contactt"
+        />
 
+    <Button
+        android:id="@+id/buttonLokacioni"
+        android:layout_width="10dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginStart="110dp"
+        android:background="@drawable/lokacionn"/>
 
 
 </RelativeLayout>
