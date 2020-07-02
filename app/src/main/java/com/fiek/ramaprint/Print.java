@@ -4,7 +4,10 @@ package com.fiek.ramaprint;
         import androidx.recyclerview.widget.LinearLayoutManager;
         import androidx.recyclerview.widget.RecyclerView;
 
+        import android.content.Intent;
         import android.os.Bundle;
+        import android.view.View;
+        import android.widget.Button;
 
         import java.util.ArrayList;
 
@@ -18,11 +21,25 @@ public class Print extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_print);
 
+        Button buttonPorosit = findViewById(R.id.buttonPorosit);
+
+        buttonPorosit.setOnClickListener(v -> openPorosit());
+
         mRecyclerView=findViewById(R.id.recycler_view);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         myAdapter =new MyAdapter(this,getMyList());
         mRecyclerView.setAdapter(myAdapter);
+    }
+
+    public  void startdbapp(View view)
+    {
+        new DbManager(this);
+        startActivity(new Intent(this,Porosit.class));
+    }
+    public void openPorosit(){
+        Intent intent = new Intent(this,Porosit.class);
+        startActivity(intent);
     }
 
     private ArrayList<Model> getMyList(){
