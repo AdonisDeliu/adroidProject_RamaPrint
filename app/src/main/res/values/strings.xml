@@ -14,4 +14,15 @@
     <string name="message">Message:</string>
     <string name="enter_message_here">Enter message heree…</string>
     <string name="dergo">Dergo</string>
+    <string name="beje_porosin">Beje Porosin!</string>
+    <string name="emri_juaj">Emri juaj...</string>
+    <string name="emaili_juaj">Emaili juaj...</string>
+    <string name="porosia_juaj">Porosia juaj...</string>
+    <string name="title_activity_web">web</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_web_f">WebF</string>
 </resources>

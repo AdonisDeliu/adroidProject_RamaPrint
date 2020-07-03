@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         buttonWeb.setOnClickListener(v -> openWeb());
-
         buttonDesign.setOnClickListener(v -> openDesign());
 
         buttonReklam.setOnClickListener(v -> openReklam());

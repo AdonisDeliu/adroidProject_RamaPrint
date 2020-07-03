@@ -57,7 +57,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyHolder> {
                 Intent intent=new Intent(c,Elementi.class);
                 intent.putExtra("iTitle",gTitle);
                 intent.putExtra("iDesc",gDesc);
-                intent.putExtra("iImage",bytes);
+                final Intent iImage = intent.putExtra("iImage", bytes);
                 c.startActivity(intent);
 
             }

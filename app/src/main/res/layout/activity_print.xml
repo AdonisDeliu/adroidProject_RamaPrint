@@ -9,4 +9,11 @@ android:background="@drawable/background">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/recycler_view" />
+
+    <Button
+        android:id="@+id/buttonPorosit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/recycler_view"
+        android:text="Porosit!" />
 </RelativeLayout>

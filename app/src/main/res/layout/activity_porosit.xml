@@ -49,4 +49,11 @@
         android:layout_marginTop="500dp"
         android:text="@string/beje_porosin"
         android:onClick="addRecord"/>
+
+    <Button
+        android:id="@+id/buttonVlereso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:text="Na vlerso!" />
 </RelativeLayout>
